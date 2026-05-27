@@ -1,0 +1,48 @@
+experiment: proposed
+task: cscs
+data_root: data/XRF55
+device: auto
+
+training:
+  epochs: 100
+  pretrain_epochs: 100
+  ft_epochs: 100
+  ft_lr: 0.00001
+  batch_size: 16
+  num_workers: 4
+  shots: [0, 1, 2, 3, 4, 5]
+  modalities: [RFID, WiFi, mmWave, Fusion]
+  force_retrain: false
+  force_pretrain: false
+  strict_subject_consistency: true
+
+ablation:
+  shots: [5]
+  tags:
+    - base
+    - comp_drop
+    - no_drop
+    - no_drop_no_infonce
+    - no_infonce
+    - infonce_3comp
+    - infonce_allpairs
+    - drop_any
+    - bimamba
+
+sensor_failure:
+  shot: 5
+  tags:
+    - base
+    - comp_drop
+    - no_drop
+    - no_drop_no_infonce
+    - no_infonce
+    - infonce_3comp
+    - infonce_allpairs
+    - drop_any
+    - bimamba
+
+complexity:
+  use_cache: true
+  save: true
+  verbose: true

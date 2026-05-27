@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local datasets and generated artifacts
+DATASET/
+data/
+reproc/
+outputs/
+results/
+logs/
+wandb/
+
+# Model checkpoints and numeric arrays
+*.pth
+*.pt
+*.ckpt
+*.npy
+*.npz
+
+# Local environment files
+.env
+.venv/
+venv/
+env/

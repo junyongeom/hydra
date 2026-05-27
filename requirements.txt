@@ -1,0 +1,5 @@
+numpy==2.4.3
+torch==2.10.0
+mamba-ssm==2.3.1
+causal-conv1d==1.6.1
+PyYAML>=6.0

@@ -1,0 +1,24 @@
+experiment: xrf55
+task: cscs
+data_root: data/XRF55
+device: auto
+
+training:
+  epochs: 200
+  pretrain_epochs: 200
+  ft_epochs: 100
+  ft_lr: 0.00001
+  batch_size: 64
+  num_workers: 4
+  shots: [0, 1, 2, 3, 4, 5]
+  force_retrain: false
+  force_pretrain: false
+  strict_subject_consistency: true
+
+sensor_failure:
+  shot: 5
+
+complexity:
+  use_cache: true
+  save: true
+  verbose: true
