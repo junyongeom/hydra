@@ -1,5 +1,7 @@
 # HYDRA: Hybrid Domain-Robust Activity Recognition via Multimodal RF Sensing under Missing Modalities
 
+The paper is currently under review at IEEE Internet of Things Journal.
+
 
 Thanks for the wonderful XRF55 dataset: https://github.com/aiotgroup/XRF55-repo
 
